@@ -1,0 +1,71 @@
+﻿c<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sample</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col sm-1 my-3">
+                    <img src="logo.png" rel="gmail" />
+                </div>
+                <div class="col-sm-9">
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+                <div class="col-sm-1 my-3 ">
+                    <div class="btn-group dropleft">
+                        <div class="btn-group" style="float:right">
+                            <button type="button" class="btn btn-light rounded-circle dropdown " data-toggle="dropdown">
+                                <img class="rounded-circle dropdown " src="sample.jpg" style="max-height:29px">
+                                </img>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="nav nav-pills flex-column ">
+                        <li class="nav-item">
+                            <a class="list-group-item list-group-item-action p-2" style="max-width:140px" href="#">Inbox <span class="badge badge-danger badge-pill">127</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item list-group-item-action p-2" style="max-width:140px" href="#">Spam <span class="badge badge-dark badge-pill">56</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item list-group-item-action p-2" style="max-width:140px" href="#">Sent <span class="badge badge-dark badge-pill">29</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item list-group-item-action p-2" style="max-width:140px" href="#">Draft <span class="badge badge-dark badge-pill">12</span></a>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h5 id="demo"></h5>
+                    <script>
+                        var mails = ["Mail1", "Mail2", "Mail3", "Mail4", "Mail5", "Mail6", "Mail7", "Mail8", "Mail9", "Mail10"];
+                        var text = "";
+                        var i;
+                        for (i = 0; i < mails.length; i++) {
+                            text += "<a href='#' class='font-weight-normal list-group-item list-group-item-action p-1'>" + mails[i] + "<br>";
+                        }
+                        document.getElementById("demo").innerHTML += text + "</a>";
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
